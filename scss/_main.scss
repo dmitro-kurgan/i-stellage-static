@@ -1,0 +1,134 @@
+// ------------------------------VARIABLES-------------------------------
+$main_color: #fff;
+$main_font-size: 24px;
+$first_font-family: CodePro, Arial, sans-serif;
+$second_font-family: FuturaPT, Arial, sans-serif;
+$third_font-family: FuturaNewBook, Arial, sans-serif;
+$fourth_font-family: FuturaNewDemi, Arial, sans-serif;
+$fifth_font-family: Roboto, Arial, sans-serif;
+
+$Heavy: FuturaNewHeavy, Arial, sans-serif;
+
+$NewBook: FuturaNewBook, Arial, sans-serif;
+
+$NewDemi: FuturaNewDemi, Arial, sans-serif;
+
+$Book: FuturaPT-Book, Arial, sans-serif;
+
+$yellow_color: #fed900;
+$main_transition: 0.5s all;
+
+// $desctop: "(min-width: 1200px) and (max-width: 1199px)";
+// $tablet: "(min-width: 992px) and (max-width: 991px)";
+// $mobile: "(min-width: 768px) and (max-width: 767px)";
+$desctop_only: "(min-width: 992px) and (max-width: 1199px)";
+$tablet_only: "(min-width: 768px) and (max-width: 991px)";
+
+$desctop: "screen and (max-width: 1199px)";
+$tablet: "screen and (max-width: 991px)";
+$mobile: "screen and (max-width: 767px)";
+// --------------------------------MIXINS--------------------------------
+$prefixes: "-webkit-", "-o-", "-moz-", "-ms-";
+
+@mixin addPrefix($item, $val) {
+	@each $tmp in $prefixes {
+		#{$tmp}#{$item}:#{$val};
+	}
+	#{$item}: $val;
+}
+
+$prefixes-placeholder: "&::-webkit-input-", "&::-moz-", "&:-moz-", "&:-ms-";
+
+@mixin addPrefixPlaceholder($item, $val) {
+	@each $tmp in $prefixes-placeholder {
+		#{$tmp}#{$item}:#{$val};
+	}
+	#{$item}: $val;
+}
+
+.text-overflow {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.branch-name {
+	display: inline-block;
+	max-width: 200px;
+	
+}
+
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=MAIN-STYLES=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+body {
+	min-width: 320px;
+}
+a {
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+input {
+	outline: none;
+}
+.btn {
+	border-radius: 0px;
+	background: #000;
+	color: $main_color;
+	font: 700 normal 13px $first_font-family;
+	text-transform: uppercase;
+	transition: $main_transition;
+	&:hover {
+		color: #000;
+		background: $yellow_color;
+	}
+}
+.navbar li a.active {
+	background: $yellow_color;
+	color: #000;
+	@media #{$mobile} {
+		background: transparent;
+		color: $yellow_color !important;
+	}
+}
+.blk-title {
+	background: $yellow_color;
+	width: 260px;
+	height: 60px;
+	font: 700 normal 28px $first_font-family;
+	color: #000;
+	line-height: 1;
+	padding: 18px 0;
+	text-align: center;
+	@media #{$mobile} {
+		margin: auto;
+	}
+
+}
+// form {
+	input, textarea {
+		border: none;
+		border-radius: 0px;
+		font: 600 normal 18px $Book;
+		color: #000;		
+		&::-webkit-input-placeholder {font: 400 normal 18px $second_font-family;color: #bfbfbf;}
+		&:-moz-placeholder           {font: 400 normal 18px $second_font-family;color: #bfbfbf;}
+		&:-ms-input-placeholder      {font: 400 normal 18px $second_font-family;color: #bfbfbf;}
+	}
+// }
+.credo {
+	font: 700 normal 17px $first_font-family;
+	color: #c1c0c0;
+	margin-top: 5px;
+	text-align: left;
+	@media #{$mobile} {
+		text-align: center;
+	}
+}
+.add-margin-2 {
+	margin-top: 4px;
+}
+// .container {
+// 	@media screen and (min-width: 1200px) {
+// 		width: 1280px;
+// 	}
+// }

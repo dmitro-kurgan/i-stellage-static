@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>I-Stellage</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<header>
+	<div class="header">
+		<div class="container">
+			<a href="./" class="logo" id="logo">
+				<p><span>i</span>-stellag</p>
+			</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<div class="header__right">
+				<a href="contacts.html#OrderUs" class="btn anchor order-btn">Связаться</a>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav header__menu">
+						<li>
+							<a href="./">Главная</a>
+						</li>
+						<li>
+							<a href="company.html">О компании</a>
+						</li>
+						<li>
+							<a href="blog.html">Блог</a>
+						</li>
+						<li>
+							<a href="contacts.html" class="active">Контакты</a>
+						</li>
+					</ul>
+					<div class="" id="accordion">
+					  	<div class="panel">
+					    	<div class="panel-heading">
+					        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+					        	Стеллажи</a>
+						    </div>
+						    <div id="collapse3" class="panel-collapse collapse">
+					      		<div class="panel-body" id="StellageTab">
+					      		</div>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="content content-contacts">
+	<section class="banner">				
+		<ul class="navbar container">
+			<li>
+				<a href="pallet.html">Паллетные стеллажи</a>
+			</li>
+			<li>
+				<a href="shelf.html">Полочные стеллажи</a>
+			</li>
+			<li>
+				<a href="cantilever.html">Консольные стеллажи</a>
+			</li>
+			<li>
+				<a href="mezonin.html">Мезонин</a>
+			</li>
+			<li>
+				<a href="commercial.html">Стеллажи торговые</a>
+			</li>
+		</ul>
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<h2 class="blk-title">Контакты</h2>
+			<ul class="contacts__blk clearfix">
+				<li class="col-sm-4">
+					<div class="contacts__box">
+						<div class="contacts__box__img"></div>
+						<p class="contacts__box__name">Адрес</p>
+						<div class="contacts__box__txt">
+							<p>г. Одесса,<br>ул. Черноморского Казачества, 72</p>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="contacts__box">
+						<div class="contacts__box__img"></div>
+						<p class="contacts__box__name">Телефоны</p>
+						<div class="contacts__box__txt">
+							<a href="tel:+380487015901">Одесса (048) 701-59-01</a>
+							<a href="tel:+380442225601">Киев (044) 222-56-01</a>
+							<a href="tel:+380639463142">(063) 946-31-42</a>
+							<a href="tel:+380957715028">(095) 771-50-28</a>
+							<a href="tel:+380688254079">(068) 825-40-79</a>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="contacts__box">
+						<div class="contacts__box__img"></div>
+						<p class="contacts__box__name">E-mail</p>
+						<div class="contacts__box__txt">
+							<a href="mailto:info@eoc.kiev.ua">info@eoc.kiev.ua</a>
+						</div>
+					</div>
+				</li>	
+			</ul>
+		</div>
+	</section>
+	<section class="order-us" id="OrderUs">
+		<div class="container">
+			<h2 class="blk-title">Свяжись с нами</h2>
+			<form id="order-form" data-title="Заявка на сайте" data-order-form>
+				<div class="row">
+					<div class="order-us__left col-sm-6">
+						<div class="form-group clearfix">
+							<div>
+								<input type="text" name="name" data-title="Ваше имя" class="form-control" id="name" placeholder="Ваше имя" required/>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div>
+								<input type="text" name="e-mail" data-title="Ваш e-mail" class="form-control" id="email" placeholder="Ваш e-mail" required/>
+							</div>	
+						</div>
+						<div class="form-group clearfix">
+							<div>
+								<input type="tel" name="tel" data-title="Ваш телефон" class="form-control" id="tel" placeholder="Ваш телефон" required/>
+							</div>
+						</div>
+					</div>
+					<div class="order-us__right col-sm-6">
+						<div class="form-group clearfix">
+							<div>
+								 <textarea class="form-control" rows="5" placeholder="Ваше сообщение" id="comment"></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</div>
+			</form>	
+		</div>	
+	</section>
+	<section class="map-blk">
+		<div class="map" id="map"></div>
+	</section>
+</div>
+<footer>
+	<div class="footer">
+		<div class="container">
+			<ul class="row">
+				<li class="col-md-4">
+					<div class="footer__left">
+						<a href="./" class="logo">
+							<p><span>i</span>-stellag</p>
+						</a>
+						<ul class="footer__address">
+							<li>
+								<p>г. Одесса, ул. Черноморского Казачества, 72</p>
+							</li>
+							<li>
+								<a href="">(063) 946-31-42</a>
+							</li>
+							<li>
+								<a href="">info@i-stellag.ua</a>
+							</li>
+						</ul>
+					</div>				
+				</li>
+				<li class="col-md-6">
+					<div class="footer__center">
+						<ul class="footer__nav clearfix">
+							<li>
+								<a href="">Паллетные стеллажи</a>
+							</li>
+							<li>
+								<a href="">Консольные стеллажи</a>
+							</li>
+							<li>
+								<a href="">Торговые стеллажи</a>
+							</li>
+							<li>
+								<a href="">Полочные стеллажи</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="#">Нагрузка на полу 80 кг</a>
+									</li>
+									<li>
+										<a href="#">Нагрузка на полу 150-500 кг</a>
+									</li>
+									<li>
+										<a href="#">Нагрузка на полу 500-1100кг</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Мезонин</a>
+							</li>
+						</ul>
+						<ul class="footer__menu">
+							<li>
+								<a href="./">Главная</a>
+							</li>
+							<li>
+								<a href="company.html">О компании</a>
+							</li>
+							<li>
+								<a href="blog.html">Блог</a>
+							</li>
+							<li>
+								<a href="contacts.html" class="active">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="col-md-2">
+					<div class="footer__right">
+						<p>Свяжись с нами:</p>
+						<ul class="footer__socials">
+							<li>
+								<a href="#"></a>
+							</li>
+							<li>
+								<a href="#"></a>
+							</li>
+							<li>
+								<a href="#"></a>
+							</li>
+							<li>
+								<a href="#"></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- =====================BUTTON-TO-TOP======================== -->
+<a id="back-to-top" href="#" class="btn-primary back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left">
+	<i class="arrow"></i>
+</a>
+<script src="js/jquery1.12.4.jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+	var map;
+	function initMap() {
+	    map = new google.maps.Map(document.getElementById('map'), {
+	        center: {lat: 46.516529, lng: 30.726223},
+	        scrollwheel:false,
+	        zoom: 17
+		});
+	// var markerImage = new google.maps.MarkerImage(
+	// 			'images/location.png',
+	// 			new google.maps.Size(177, 53),
+	// 			new google.maps.Point(0, 0),
+	// 			new google.maps.Point(0, 52)
+	// );
+	// var marker = new google.maps.Marker({
+	// 	    position: {lat: 50.0032341, lng: 36.201267},
+	// 	    map: map,
+	// 	    title: 'Pronto',
+	// 	    icon: markerImage
+	// 	});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9ETwoz8bLgqdRniseIzzVB5rvIpJuq4&callback=initMap"
+    async defer></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

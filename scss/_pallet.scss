@@ -1,0 +1,99 @@
+.content-stellages {
+	.banner {
+		padding-bottom: 97px;
+		@media #{$tablet} {
+			padding-bottom: 70px;
+			padding-top: 120px;
+		}
+		@media #{$mobile} {
+			// padding-bottom: 100px;
+			display: none;
+		}
+	}
+	.racks {
+		padding-top: 50px;
+		&__left {
+			width: 30%;
+			float: left;
+			@media #{$mobile} {
+				float: none;
+				width: 100%;
+			}
+			.blk-title {
+				font: 400 normal 28px $Heavy;
+				width: 310px;
+				height: 60px;
+				padding: 15px 0;
+				line-height: 1;
+				@media #{$tablet} {
+					font-size: 18px;
+					width: 100%;
+					padding: 21px 0;
+				}
+				@media #{$mobile} {
+					font-size: 26px;
+					width: 290px;
+					padding: 15px 0;
+				}
+			}
+			// img {
+			// 	width: 100%;
+			// 	margin-top: 25px;
+			// 	padding-right: 10px;
+			// 	display: block;
+			// 	position: relative;
+			// }
+			&__img {
+				background-size: cover;
+				background-position: center;
+				min-height: 300px;
+				margin-top: 25px;
+				@media #{$desctop} {
+					min-height: 250px;
+				}
+				@media #{$tablet} {
+					min-height: 200px;
+				}
+				@media #{$mobile} {
+					margin-bottom: 50px;
+					min-height: 300px;
+				}
+				@media screen and (max-width: 400px) {
+					min-height: 200px;
+				}
+			}
+		}
+		&__right {
+			width: 70%;
+			float: right;
+			padding-left: 40px;
+			@media #{$mobile} {
+				float: none;
+				width: 100%;
+				padding-left: 0px;
+				text-align: center;
+				margin-top: 15px;
+			}
+			h5 {
+				font: 400 normal 28px $Heavy;
+				color: #000;
+			}
+			p {
+				font: 400 normal 21px $third_font-family;
+				margin-bottom: 30px;
+				text-align: left;
+			}
+			.btn {
+				// width: 140px;
+				height: 50px;
+				padding: 18px 12px;
+				background: $yellow_color;
+				color: #000;
+				&:hover {
+					background: #000;
+					color: $yellow_color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.content-mezonin {
+	.racks__right {
+		p {
+			margin-bottom: 0px;
+		}
+		ul {
+			margin-bottom: 10px;
+			li {
+				font: 400 normal 21px $third_font-family;
+				position: relative;
+				text-indent: 25px;
+				&:before {
+					content: '';
+					position: absolute;
+					background: $yellow_color;
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					left: 0px;
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+}

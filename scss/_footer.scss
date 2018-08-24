@@ -1,0 +1,259 @@
+footer {
+	.footer {
+		padding: 40px 0 25px 0;
+		@media #{$mobile} {
+			// text-align: center;
+		}
+		.logo {
+			// background: #000;
+			width: 260px;
+			// height: 120px;
+			display: inline-block;
+			height: 55px;
+			// padding: 35px 0;
+			// text-align: center;
+			margin-bottom: 25px;
+			p {
+				display: inline-block;
+				position: relative;
+				font: 600 normal 41px $first_font-family;
+				color: #000;
+				line-height: 1;
+				span {
+					color: $yellow_color;
+				}
+				&:after {
+					position: absolute;
+					content: 'Стеллажи от украинского производителя';
+					font: 600 normal 8px $Book;
+					color: #000;
+					bottom: -12px;
+					left: 0px;
+					right: 0px;
+					text-transform: uppercase;
+					letter-spacing: 1.25px;
+				}
+			}
+		}
+		&__address {
+			// text-align: left;
+			li {
+				// text-align: left;
+				a, p {
+					font: 600 normal 12px $fifth_font-family;
+					color: #000;
+					text-transform: none;
+					display: inline-block;
+					position: relative;
+					padding-left: 32px;
+					margin-top: 10px;
+					// text-align: left;
+					&:before {
+						content: '';
+						position: absolute;
+						background: url(../images/footer-sprite.png)no-repeat;
+						background-size: cover;
+						width: 20px;
+						height: 20px;
+						left: 0px;
+						top: -5px;
+						background-position: 2px;
+					}				
+				}
+				p {
+					margin-top: 0px;
+				}
+				&:nth-child(2) {
+					a {
+						&:before {	
+							background-position: -53px;
+						}
+					}
+				}
+				&:nth-child(3) {
+					a {
+						&:before {
+							background-position: -25px;
+						}
+					}
+				}
+			}
+		}
+		&__nav {
+			li {
+				margin-right: 42px;
+				margin-bottom: 15px;
+				// display: inline-block;
+				float: left;
+				position: relative;
+				@media #{$desctop} {
+					margin-right: 20px;
+				}
+				@media #{$tablet} {
+					margin-top: 20px;
+				}
+				@media #{$mobile} {
+					float: none;
+				}
+				a {
+					font: 600 normal 13px $Book;
+					color: #000;
+					text-transform: uppercase;
+					@media #{$desctop} {
+						font-size: 12px;
+					}	
+				}
+				.sub-menu {
+					position: absolute;
+					margin-top: 5px;
+					@media #{$mobile} {
+						position: initial;
+					}
+						li {
+							margin: 0px;
+							a {
+								color: #c4c4c4;
+								font-size: 11px;
+								display: inline-block;
+								white-space: nowrap;
+								text-transform: uppercase;
+								transition: $main_transition;
+								&:hover {
+									color: #000;
+								}
+							}
+						}
+					}
+				&:nth-child(3) {
+					margin-right: 0px;
+					@media #{$tablet} {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+		&__menu {
+			margin-top: 85px;
+			@media #{$tablet} {
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+				margin-right: 20px;
+				position: relative;
+				&:after {
+					content: '|';
+					position: absolute;
+					font: 600 normal 13px $fifth_font-family;
+					color: #c3c3c3;
+					right: -12px;
+					top: 0px;
+				}
+				a {
+					font: 600 normal 13px $fifth_font-family;
+					text-transform: uppercase;
+					// color: #000;
+					color: #c3c3c3;
+					transition: 0.5s all;
+					&:hover {
+						color: #000;
+					}
+				}
+				a.active {
+					color: #000;
+				}
+				&:last-child {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+		&__center {
+			padding-left: 30px;
+		}
+		&__right {
+			text-align: right;
+			overflow: hidden;
+			@media #{$tablet} {
+				text-align: center;
+				margin-top: 50px;
+			}
+			p {
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				font: 600 normal 13px $Book;
+			}
+		}
+		&__social {
+			float: left;
+			@media #{$desctop} {
+				// text-align: left;
+			}
+			@media #{$desctop} {
+				float: none;
+			}
+		}
+		&__production {
+			float: right;
+			@media #{$desctop} {
+				float: none;
+				margin-top: 30px;
+			}
+			.logo {
+				background: url(../images/unitspace.png) center no-repeat;
+				background-size: contain;
+				width: 82px;
+				height: 44px;
+				margin: 0px;
+			}
+		}
+		&__socials {
+			// float: right;
+			display: inline-block;
+			li {
+				float: left;
+				margin-left: 10px;
+
+				a {
+					background: url(../images/footer-social-sprite.png)no-repeat;
+					background-size: cover;
+					width: 21px;
+					height: 21px;
+					display: inline-block;
+					@include addPrefix(filter, invert(0%) brightness(0));
+					transition: $main_transition;
+					&:hover {
+						@include addPrefix(filter, invert(0%) brightness(1));
+					}
+				}
+				&:first-child {
+					// @media #{$desctop} {
+					// 	margin-left: 0px;
+					// }
+					margin-left: 0px;
+					a {
+						background-position: 0px;
+						width: 11px;
+
+					}
+				}
+				&:nth-child(2) {
+					a {
+						background-position: -23px;
+					}
+				}
+				&:nth-child(3) {
+					a {
+						background-position: -55px;
+					}
+				}
+				&:nth-child(4) {
+					a {
+						background-position: -90px;
+					}
+				}
+			}
+		}
+	}
+}

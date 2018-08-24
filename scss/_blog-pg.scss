@@ -1,0 +1,90 @@
+.blog-pg {
+	.blog-page {
+		&__text {
+			width: 92%;
+			@media #{$mobile} {
+				width: 100%;
+			}
+			h4 {
+				font: 400 normal 25px $NewDemi;
+			}
+			p {
+				font: 400 normal 25px $Book;
+				min-height: 670px;
+				@media #{$mobile} {
+					font-size: 16px;
+				}
+			}
+		}
+		&__data {
+			width: 8%;
+			@media #{$mobile} {
+				width: 100%;
+			}
+			&__inner {
+				padding: 0px 5px 5px 5px;
+				@media #{$mobile} {
+					padding: 0px 4px 0px 4px;
+				}
+				p {
+					font: 700 normal 28px $second_font-family;
+					line-height: 1;
+					padding-top: 50px;
+					&:before {
+						width: 34px;
+						height: 34px;
+						top: 10px;
+						@media #{$mobile} {
+							width: 23px;
+							height: 23px;
+							top: 5px;
+						}
+					}
+					@media #{$mobile} {
+						font-size: 18px;
+						padding-top: 30px;
+					}
+				}
+				span {
+					display: block;
+					&:nth-child(2) {
+						font-size: 24px;
+						top: -7px;
+						@media #{$mobile} {
+							font-size: 16px;
+							top: -5px;
+						}
+					}
+					&:nth-child(3) {
+						font-size: 20px;
+						top: 0px;
+						@media #{$mobile} {
+							font-size: 14px;
+							top: -5px;
+						}
+					}
+				}
+			}
+		}
+		.slick-dots {
+			bottom: -50px;
+			li {
+				button {
+					&:before {
+						color: #aeaeae;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.slick-dots {
+			li.slick-active {
+				button {
+					&:before {
+						color: $yellow_color;
+					}
+				}
+			}
+		}
+	}
+}
